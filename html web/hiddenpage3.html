@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decoding Decisions with If-Else</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="visionarytech.png">
+</head>
+<body class="main-background">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="page1.html">What is Java?</a></li>
+                <li><a href="page2.html">How Did Java Start?</a></li>
+                <li><a href="page3.html">Who Is the Creator Of Java?</a></li>
+                <li><a href="page4.html">Fun Facts About Java</a></li>
+                <li><a href="page5.html">Team Members</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Decoding Decisions with If-Else</h1>
+        <p>In programming, you often need to make decisions. Java provides <i><b>if-else</b></i> statements to help your code make choices based on conditions. Let's explore this with an example!</p>
+        <div class="hidden-page-3">
+            <br><h2 style="font-size: 2em;">If-Else Example: The Adventure of Code</h2>
+            <p style="font-size: 1.5em;">Let’s see if our hero, CodeMaster, has enough energy to complete their mission!</p>
+
+            <pre style="font-size: 1.5em; background-color: #f4f4f4; padding: 10px; border-radius: 5px;">
+public class HeroMission {
+    public static void main(String[] args) {
+        int energyLevel = 75;  // Hero's energy level
+
+        // Check if the hero has enough energy to complete the mission
+        if (energyLevel >= 50) {
+            System.out.println("CodeMaster is ready for the mission!");
+        } else {
+            System.out.println("CodeMaster needs to recharge!");
+        }
+    }
+}
+            </pre>
+            <h2 style="font-size: 1.5em;">Explanation:</h2>
+            <ul style="font-size: 1.5em;">
+                <li><b>if</b> checks if <i><b>energyLevel</b></i> is 50 or more. If it is, CodeMaster is ready!</li>
+                <li>If <i><b>energyLevel</b></i> is less than 50, the <b>else</b> block will tell CodeMaster to recharge.</li>
+            </ul>
+        </div>
+        <br>
+        <button id="backButton" class="button">Back to Who Is the Creator Of Java?</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 VisionaryTech. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+
+    <script>
+        document.getElementById("backButton").addEventListener("click", function() {
+            window.location.href = "page3.html"; 
+        });
+    </script>
+
+</body>
+</html>

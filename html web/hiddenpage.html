@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Your First Java Code</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="visionarytech.png">
+</head>
+<body class="main-background">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="page1.html">What is Java?</a></li>
+                <li><a href="page2.html">How Did Java Start?</a></li>
+                <li><a href="page3.html">Who Is the Creator Of Java?</a></li>
+                <li><a href="page4.html">Fun Facts About Java</a></li>
+                <li><a href="page5.html">Team Members</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Learn Your First Java Code</h1>
+        <div class="hidden-page-1">
+            <br><h2 style="font-size: 2em;">How to Print "Hello, World!"</h2>
+            <p style="font-size: 1.5em;">To print "Hello, World!" in Java, use the following code:</p>
+            <pre style="font-size: 1.5em; background-color: #f4f4f4; padding: 10px; border-radius: 5px;">
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+            </pre>
+        </div>
+        <br>
+        <button id="backButton" class="button">Back to What is Java?</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 VisionaryTech. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+
+    <script>
+        document.getElementById("backButton").addEventListener("click", function() {
+            window.location.href = "page1.html"; 
+        });
+    </script>
+
+</body>
+</html>
