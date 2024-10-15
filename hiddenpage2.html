@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastering Variables in Java</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="visionarytech.png">
+</head>
+<body class="main-background">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="page1.html">What is Java?</a></li>
+                <li><a href="page2.html">How Did Java Start?</a></li>
+                <li><a href="page3.html">Who Is the Creator Of Java?</a></li>
+                <li><a href="page4.html">Fun Facts About Java</a></li>
+                <li><a href="page5.html">Team Members</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Mastering Variables and Data Types in Java</h1>
+        <p>Understanding how to store and manipulate data is crucial in any programming language. Let’s dive into the basics of Java variables and data types:</p>
+        <div class="hidden-page-2">
+            <br><h2 style="font-size: 2em;">Java Data Types</h2>
+            <ul style="font-size: 1.5em;">
+                <li><b>int</b>: Used to declare whole numbers (e.g., <code>int age = 25;</code>)</li>
+                <li><b>double</b>: For real numbers with decimal points (e.g., <code>double score = 98.6;</code>)</li>
+                <li><b>String</b>: Stores text data enclosed in double quotes (e.g., <code>String name = "Alice";</code>)</li>
+                <li><b>char</b>: Holds a single character (e.g., <code>char grade = 'A';</code>)</li>
+                <li><b>boolean</b>: Represents true/false values (e.g., <code>boolean is Online = true;</code>)</li>
+            </ul>
+
+            <h2 style="font-size: 1.5em;">Example:</h2>
+            <pre style="font-size: 1.5em; background-color: #f4f4f4; padding: 10px; border-radius: 5px;">
+public class DataTypes {
+    public static void main(String[] args) {
+        String name = "Archie";
+        int age = 18;
+        double score = 9.9;
+        char group = 'S';
+        boolean online = true;
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Score: " + score);
+        System.out.println("Group: " + group);
+        System.out.println("Online: " + online);
+    }
+}
+            </pre>
+        </div>
+        <br>
+        <button id="backButton" class="button">Back to How Did Java Start?</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 VisionaryTech. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+
+    <script>
+        document.getElementById("backButton").addEventListener("click", function() {
+            window.location.href = "page2.html"; 
+        });
+    </script>
+
+</body>
+</html>
